@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — SafeScan</title>
+  <style>
+    :root { color-scheme: light dark; --fg: #111; --muted: #555; --bg: #fafafa; --accent: #0a7aff; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #000; } }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--fg); line-height: 1.55; }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: 1.75rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .meta { font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← SafeScan</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective: September 7, 2026 · Last updated: September 7, 2026</p>
+  <p>This Privacy Policy describes how <strong>Richard Method</strong> (“we,” “us”) handles information in the iOS app <strong>SafeScan</strong> (bundle ID <code>com.safescan.app</code>).</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>SafeScan is designed to keep your scans on your device.</li>
+    <li>We do not require an account and do not operate a SafeScan user database of your scan history.</li>
+    <li>We do not use advertising SDKs, analytics SDKs, or crash-reporting SDKs in the current version.</li>
+    <li>Optional short-link expansion may contact third-party shortener servers to resolve redirects you choose to expand.</li>
+    <li>Purchases are processed by Apple; we do not receive your full payment card details.</li>
+  </ul>
+
+  <h2>Information we process</h2>
+  <h2>1. Information stored on your device</h2>
+  <p>SafeScan stores the following locally using Apple frameworks (including SwiftData / UserDefaults) on your device:</p>
+  <ul>
+    <li>Decoded scan payloads (URLs, Wi‑Fi credentials encoded in codes, text, and similar content you scan or create)</li>
+    <li>Safety evaluation results generated on-device (for example HTTP vs HTTPS, IP host heuristics, shortener hints)</li>
+    <li>App preferences (for example whether History Face ID lock is enabled, onboarding completion)</li>
+    <li>Created QR payload strings you enter in Create</li>
+  </ul>
+  <p>This data stays on your device unless you explicitly share it (Share Sheet), open a link (Safari / private preview), or back up your device with Apple services you control (for example iCloud device backup).</p>
+
+  <h2>2. Camera, Photos, and Files</h2>
+  <p>Camera access is used only to detect QR codes and barcodes. Photo Library and Files access is used only when you choose an image to decode. Images are processed on-device for barcode detection; SafeScan does not upload your camera frames or photo library to our servers.</p>
+
+  <h2>3. Face ID / Touch ID / passcode</h2>
+  <p>If you enable History lock, authentication is performed by Apple’s LocalAuthentication framework on your device. We do not receive your biometric data.</p>
+
+  <h2>4. Network activity</h2>
+  <p>SafeScan may use the network when you:</p>
+  <ul>
+    <li>Expand a recognized short link (HEAD/GET to follow redirects to reveal the destination)</li>
+    <li>Load a page in the in-app private browser preview you choose to open</li>
+    <li>Open a link in Safari</li>
+    <li>Purchase or restore SafeScan Pro via Apple’s App Store / StoreKit</li>
+  </ul>
+  <p>Short-link expansion and private preview contact third-party servers that host the destination or shortener. Those servers’ own privacy policies apply to what they log.</p>
+
+  <h2>5. Purchases</h2>
+  <p>SafeScan Pro is a one-time non-consumable In-App Purchase. Apple processes payment and entitlement restoration. We receive purchase status via StoreKit on your device; we do not store your Apple ID password or full payment instrument details.</p>
+
+  <h2>Information we do not collect</h2>
+  <ul>
+    <li>No advertising identifier (IDFA) collection for tracking</li>
+    <li>No third-party analytics or crash SDKs in the current build</li>
+    <li>No account registration, email signup, or cloud sync of scan history in the current build</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>SafeScan is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Deny camera or photos access in iOS Settings; you can still use other features that do not require those permissions (for example Create).</li>
+    <li>Clear History in Settings.</li>
+    <li>Delete the app to remove on-device SafeScan data (subject to any device backups you keep).</li>
+    <li>Manage App Store purchases in your Apple ID settings.</li>
+  </ul>
+
+  <h2>GDPR / CCPA notes (where applicable)</h2>
+  <p>Because scan history is stored on your device and we do not run a SafeScan cloud account for that history, most access/deletion requests are fulfilled by using in-app Clear History or deleting the app. For privacy questions, use the contact method below.</p>
+  <p>We do not sell personal information.</p>
+
+  <h2>Apple App Privacy (Nutrition Label)</h2>
+  <p>For the current product design, declare in App Store Connect that <strong>Data Not Collected</strong> — unless you later add analytics, accounts, or other collection. If you enable short-link expansion, that is user-initiated network contact with third parties and does not by itself create a SafeScan-operated collection of scan contents on our servers.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy as the app changes. The “Last updated” date at the top will change when we do. Material changes that affect how we handle data will be reflected here before or when the related app version ships.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: open a support request via the <a href="support.html">Support</a> page, or email <a href="mailto:rmethodm@icloud.com">rmethodm@icloud.com</a>.</p>
+  <p><em>This document is a practical template for an indie on-device scanner. It is not legal advice.</em></p>
+</main>
+</body>
+</html>
